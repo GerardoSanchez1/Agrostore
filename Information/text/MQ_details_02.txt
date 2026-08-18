@@ -1,0 +1,67 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                     B-MAX 90 4WD ROPS/CAB (INVERSOR MECÁNICO)
+================================================================================
+
+MOTOR
+--------------------------------------------------------------------------------
+• Marca / Modelo:             PERKINS / 1104D
+• Gobernación:                Mecánica
+• Control de emisiones:       Tier 3
+• Potencia máxima al motor:   83 hp (ISO TR 14396)
+• Régimen nominal:            2200 rpm
+• Potencia máxima a la TDF:   78.5 hp
+• Torque máximo @ rpm:        352 N·m @ 1400 rpm
+• Cilindros / Cilindrada:     4 / 4400 cm³
+• Aspiración:                 Turbo
+• Filtro de aire:             Tipo seco con eyector de polvo
+• Capacidad de combustible:   95 L (ROPS) / 100 L (CAB)
+
+
+EMBRAGUE
+--------------------------------------------------------------------------------
+• Tipo:                        Independiente, bidisco, tipo seco, 12 pulgadas
+• Mando:                       Mecánico
+
+
+TRANSMISIÓN
+--------------------------------------------------------------------------------
+• Tipo:                        Synchro + Inversor de marcha mecánico 12AD + 12MA
+• Velocidad de avance:         1.7 / 30 km/h (mín / máx)
+
+
+EJES DELANTERO Y TRASERO
+--------------------------------------------------------------------------------
+• Accionamiento de 4WD:       Mecánico por palanca
+• Ángulo máximo de viraje:    55 °
+• Bloqueo del diferencial:    Mecánico
+
+
+TOMA DE FUERZA TRASERA (TDF)
+--------------------------------------------------------------------------------
+• Tipo:                        Independiente de accionamiento mecánico
+• Revoluciones a la TDF:      540 / 540E rpm
+
+
+FRENOS
+--------------------------------------------------------------------------------
+• Accionamiento:              Mecánico
+• Frenos traseros:             En baño de aceite, material grafito (5 + 5 discos)
+
+
+CIRCUITO HIDRÁULICO
+--------------------------------------------------------------------------------
+• Tipo de circuito / Bomba:   Centro abierto - bomba de engranajes
+• Caudal bomba al implemento: 54 L/min
+• Caudal bomba de dirección:  24 L/min
+• Válvulas de distribución:   1 std + 1 flotante (auxiliar remota de dos vías)
+
+
+ENGANCHE DE TRES PUNTOS TRASERO
+--------------------------------------------------------------------------------
+• Control del elevador:       Mecánico
+• Categoría / Tipo enganche:   II - enganche rápido
+• Funciones de control:       Esfuerzo, posición, intermix y flotante
+• Capacidad máx. de levante:  4520 kg (a las esferas) / 2600 kg (a 610 mm, con cil auxiliares)
+
+================================================================================

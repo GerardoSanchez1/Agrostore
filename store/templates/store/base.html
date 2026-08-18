@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AgroStore — Tu tienda de productos agrícolas, jardinería, motores y refacciones. Las mejores marcas al mejor precio.">
+    <title>{% block title %}{{ page_title|default:"AgroStore" }}{% endblock %} — AgroStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'store/css/style.css' %}">
+</head>
+<body>
+    <!-- ─── Navigation Bar ────────────────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="{% url 'store:home' %}" class="nav-brand" id="nav-brand">
+                <i class="fas fa-leaf"></i>
+                <span>AgroStore</span>
+            </a>
+
+            <!-- Mobile hamburger -->
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="{% url 'store:home' %}" class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" id="nav-all-products">
+                    <i class="fas fa-store"></i> Todos los Productos
+                </a>
+                <div class="nav-dropdown" id="nav-categories-dropdown">
+                    <a href="{% url 'store:categories' %}" class="nav-link {% if request.resolver_match.url_name == 'categories' or request.resolver_match.url_name == 'category_detail' %}active{% endif %}" id="nav-categories">
+                        <i class="fas fa-th-large"></i> Categorías <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-content" id="categories-dropdown-content">
+                        {% for cat in nav_categories %}
+                        <a href="{% url 'store:category_detail' cat.pk %}" id="nav-cat-{{ cat.pk }}">{{ cat.name }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Search form in nav -->
+                <form class="nav-search" action="{% url 'store:search' %}" method="GET" id="nav-search-form">
+                    <div class="search-wrapper">
+                        <input type="text" name="q" class="search-input-nav" placeholder="Buscar..." value="{{ request.GET.q|default:'' }}" id="nav-search-input">
+                        <button type="submit" class="search-btn" id="nav-search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                {% if user.is_authenticated %}
+                <a href="{% url 'store:wishlist' %}" class="nav-link {% if request.resolver_match.url_name == 'wishlist' %}active{% endif %}" id="nav-wishlist">
+                    <i class="fas fa-heart"></i> Lista de Deseos
+                </a>
+                <a href="{% url 'store:logout' %}" class="nav-link nav-btn-outline" id="nav-logout">
+                    <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                </a>
+                {% else %}
+                <a href="{% url 'store:login' %}" class="nav-link {% if request.resolver_match.url_name == 'login' %}active{% endif %}" id="nav-login">
+                    <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+                </a>
+                <a href="{% url 'store:register' %}" class="nav-link nav-btn-primary" id="nav-register">
+                    <i class="fas fa-user-plus"></i> Registro
+                </a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <!-- ─── Messages ──────────────────────────────────────────────────── -->
+    {% if messages %}
+    <div class="messages-container" id="messages-container">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}" id="alert-{{ forloop.counter }}">
+            <span>{{ message }}</span>
+            <button class="alert-close" onclick="this.parentElement.remove()" aria-label="Cerrar">&times;</button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- ─── Main Content ──────────────────────────────────────────────── -->
+    <main class="main-content" id="main-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- ─── Footer ────────────────────────────────────────────────────── -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fas fa-leaf"></i> AgroStore
+                    </h3>
+                    <p class="footer-text">Tu tienda de confianza para productos agrícolas, jardinería, motores y refacciones.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'store:home' %}">Todos los Productos</a></li>
+                        <li><a href="{% url 'store:categories' %}">Categorías</a></li>
+                        <li><a href="{% url 'store:contact' %}">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contacto</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:gerardo-sanchez-1@hotmail.com"><i class="fas fa-envelope"></i> gerardo-sanchez-1@hotmail.com</a></li>
+                        <li><a href="https://wa.me/5214431745982" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> +52 443-174-59-82</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AgroStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ─── WhatsApp Floating Button ──────────────────────────────────── -->
+    <a href="https://wa.me/5214431745982" target="_blank" rel="noopener" class="whatsapp-float" id="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¿Necesitas ayuda?</span>
+    </a>
+
+    <!-- ─── CSRF token for AJAX ───────────────────────────────────────── -->
+    <script>
+        window.CSRF_TOKEN = '{{ csrf_token }}';
+    </script>
+    <script src="{% static 'store/js/main.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

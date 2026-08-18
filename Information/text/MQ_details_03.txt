@@ -1,0 +1,60 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                         MCCORMICK TRACTOR X8
+================================================================================
+
+CABINA Y CONFORT (PREMIERE CAB)
+--------------------------------------------------------------------------------
+• Estructura:                 4 montantes con puertas ancladas atrás (visibilidad panorámica)
+• Insonorización y Presión:   Presurizada, nivel de ruido por debajo de 70 dB
+• Acceso:                     Peldaños anchos y asiento de pasajero abatible
+• Asiento del conductor:      Plataforma giratoria, suspensión neumática dinámica, 
+                              sistema antivibración, respaldo climatizado/ventilado 
+                              y ajuste de altura automático
+• Ajustes de dirección:       Volante y cuadro de instrumentos regulables en inclinación y profundidad
+• Controles principales:      Reposabrazos derecho multifunción con Joystick VT-Easy Pilot
+• Interfaz de usuario:        Pantalla táctil de 12 pulgadas (configuración similar a tableta)
+• Equipamiento de serie:      Guantera climatizada, portabotellas, espejo interior, 
+                              tomas de 12V y techo transparente practicable
+• Climatización:              Automática, integrada en el techo
+• Iluminación nocturna:       12 faros de trabajo montados en el techo de la cabina
+
+
+MOTOR (FPT N67)
+--------------------------------------------------------------------------------
+• Modelo de motor:            FPT N67
+• Configuración:              6 cilindros en línea
+• Cilindrada:                 6.7 Litros
+• Turbocompresor:             De geometría variable (eVGT)
+• Sistema de inyección:       Electrónica Common Rail
+• Control de emisiones:       Tier 2
+• Montaje del motor:          Chasis de fundición con amortiguadores de caucho
+                              (aislamiento de vibraciones a cabina y transmisión)
+
+
+TRANSMISIÓN (VT-DRIVE)
+--------------------------------------------------------------------------------
+• Tipo:                       Variable Continua (CVT) de 4 etapas
+• Modos de funcionamiento:    1. Modo Auto (gestión electrónica de eficiencia)
+                              2. Modo Manual (régimen fijo por acelerador manual)
+                              3. Modo TdF (mantiene constante las RPM de la TDF)
+                              4. Modo Cruise (memoriza hasta 2 velocidades AD y 2 MA)
+
+
+SISTEMA HIDRÁULICO Y ELEVADOR
+--------------------------------------------------------------------------------
+• Tipo de circuito:           Centro cerrado con bomba de caudal variable
+• Caudal estándar:            160 L/min (al elevador y distribuidores) + 115 L/min (dirección)
+• Caudal de alto rendimiento: 212 L/min (bomba de alto caudal incluida)
+• Capacidad máx. de levante:  12 000 kg (elevador trasero)
+• Distribuidores:             9 electrohidráulicos (4 traseros, 2 ventrales y 3 delanteros)
+
+
+TOMA DE FUERZA (TDF)
+--------------------------------------------------------------------------------
+• Velocidades seleccionables: 3 velocidades electrónicas: 540Eco / 1000 / 1000Eco rpm
+• Tipo de embrague:           Electrohidráulico (arranque suave y progresivo)
+• Mandos remotos:             Integrados en los guardabarros traseros
+                              (control de elevador, TDF y distribuidor)
+
+================================================================================

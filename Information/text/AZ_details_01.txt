@@ -1,0 +1,35 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                     SELVATICI - SERIE 120.45
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                       Selvatici
+• Modelo / Serie:              Serie 120.45 (Tipo 804)
+• Tipo de equipo:              Vangatrice / Cavadora
+
+
+ESPECIFICACIONES TÉCNICAS
+--------------------------------------------------------------------------------
+• Potencia requerida:          20 - 45 H.P.
+• Número de palas:             4
+• Ancho de trabajo:            80 cm
+• Peso del equipo (sin motor): 335 kgs
+• Velocidad de trabajo:        1.2 / 2.2 Km/h (0.75 / 1.4 miles/h)
+
+
+DIMENSIONES
+--------------------------------------------------------------------------------
+• Ancho total:                 80 cm
+• Largo total:                 80 cm
+• Altura total:                78 cm
+• Distancia de enganche:       120 mm (4 3/4 inc.)
+
+
+CARACTERÍSTICAS GENERALES Y MATERIALES
+--------------------------------------------------------------------------------
+• Material de lámina:          Acero al carbón de 3/16", 5/8", 5/16", 1-3/16"
+• Toma de fuerza:              Incluida
+
+================================================================================

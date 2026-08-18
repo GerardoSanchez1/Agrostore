@@ -1,0 +1,49 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Buscar{% endblock %}
+
+{% block content %}
+<section class="page-section" id="search-page">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title"><i class="fas fa-search"></i> Buscar Productos</h1>
+        </div>
+
+        <!-- Search form -->
+        <form action="{% url 'store:search' %}" method="GET" class="search-form-full" id="search-form-full">
+            <div class="search-wrapper-full">
+                <input type="text" name="q" class="search-input-full" placeholder="Buscar por nombre, marca o categoría..." value="{{ query }}" id="search-input-full" autofocus>
+                <button type="submit" class="btn btn-primary" id="search-submit-btn">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+            </div>
+        </form>
+
+        {% if query %}
+        <p class="search-results-count">
+            {{ items|length }} resultado{{ items|length|pluralize:"s" }} para "<strong>{{ query }}</strong>"
+        </p>
+        {% endif %}
+
+        <div class="products-grid" id="products-grid">
+            {% for item in items %}
+            {% include 'store/includes/product_card.html' with item=item %}
+            {% empty %}
+            {% if query %}
+            <div class="empty-state">
+                <i class="fas fa-search"></i>
+                <p>No se encontraron productos para "<strong>{{ query }}</strong>".</p>
+                <a href="{% url 'store:home' %}" class="btn btn-outline">Ver todos los productos</a>
+            </div>
+            {% else %}
+            <div class="empty-state">
+                <i class="fas fa-search"></i>
+                <p>Escribe algo para buscar productos.</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

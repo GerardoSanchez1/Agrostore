@@ -1,0 +1,19 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                     RODAMIENTO DE RODILLOS CÓNICOS
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Tipo:                        Rodillos cónicos 
+                               (Soporta cargas radiales y axiales en una dirección)
+
+
+MEDIDAS Y DATOS TÉCNICOS
+--------------------------------------------------------------------------------
+• Diámetro interior:           20 mm
+• Diámetro exterior:           52 mm
+• Espesor / Ancho total:       22.25 mm
+• Peso aproximado:             230 g – 246 g
+
+================================================================================

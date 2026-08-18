@@ -1,0 +1,30 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Mi Lista de Deseos{% endblock %}
+
+{% block content %}
+<section class="page-section" id="wishlist-page">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title"><i class="fas fa-heart"></i> Mi Lista de Deseos</h1>
+            <p class="page-subtitle">{{ items|length }} producto{{ items|length|pluralize:"s" }} guardado{{ items|length|pluralize:"s" }}</p>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            {% for item in items %}
+            {% include 'store/includes/product_card.html' with item=item %}
+            {% empty %}
+            <div class="empty-state">
+                <i class="far fa-heart"></i>
+                <h3>Tu lista de deseos está vacía</h3>
+                <p>Explora nuestros productos y agrega los que te interesen.</p>
+                <a href="{% url 'store:home' %}" class="btn btn-primary">
+                    <i class="fas fa-store"></i> Ver Productos
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

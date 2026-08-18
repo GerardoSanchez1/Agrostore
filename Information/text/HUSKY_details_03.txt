@@ -1,0 +1,25 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                        MOTOR HUSKY RLM650E
+================================================================================
+
+INFORMACIÓN GENERAL Y RENDIMIENTO
+--------------------------------------------------------------------------------
+• Marca:                       Husky
+• Modelo:                      RLM650E
+• Tipo / Ciclo:                Motor a gasolina, 4 tiempos
+• Potencia:                    6.5 HP
+• Sistema de refrigeración:    Por aire
+• Sistema de arranque:         Eléctrico (con llave/batería) y manual de respaldo
+• Sistema de encendido:        Electrónico con bujía
+• Orientación del eje:         Horizontal (acople estándar para transmisión y poleas)
+
+
+CONSTRUCCIÓN Y MANTENIMIENTO
+--------------------------------------------------------------------------------
+• Sistema de lubricación:      Forzada / por cárter (sistema cerrado)
+• Filtro de aire:              Elemento de fácil acceso para mantenimiento
+• Construcción:                Bloque y componentes diseñados para trabajo 
+                               continuo y condiciones exigentes
+
+================================================================================

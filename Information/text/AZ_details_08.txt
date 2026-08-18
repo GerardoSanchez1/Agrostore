@@ -1,0 +1,17 @@
+================================================================================
+                      ESPECIFICACIONES DE COMPONENTE
+================================================================----------------
+
+INFORMACIÓN DEL PRODUCTO
+--------------------------------------------------------------------------------
+• Producto:                    Rin de acero con llanta neumática
+• Aplicaciones / Usos:         Remolques de molinos, ensiladoras y maquinaria agrícola
+
+
+ESPECIFICACIONES TÉCNICAS
+--------------------------------------------------------------------------------
+• Diámetro del rin:            15” (pulgadas)
+• Material del rin:            Acero
+• Tipo de llanta:              Neumática
+
+================================================================================

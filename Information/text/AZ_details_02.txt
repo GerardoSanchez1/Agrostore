@@ -1,0 +1,22 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+             AZTECA - MOLINO 20 CON LEVANTE HIDRÁULICO A TDF
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                       Azteca
+• Equipo:                      Molino 20 con levante hidráulico a toma de fuerza
+
+
+ESPECIFICACIONES TÉCNICAS
+--------------------------------------------------------------------------------
+• Potencia efectiva requerida:  60 - 80 H.P.
+• Velocidad del rotor:         540 R.P.M.
+• Rendimiento aprox. en granos: 2500 KGS/HR
+• Rendimiento aprox. en forrajes: 1250 KGS/HR
+• Cantidad de martillos:        132
+• Ancho boca de alimentación:  51 CM
+• Peso Molino c/levante y TDF: 372 KG
+
+================================================================================

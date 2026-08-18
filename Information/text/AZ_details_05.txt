@@ -1,0 +1,25 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                     EQUIPO DE MOLIENDA Y PICADO
+================================================================================
+
+INFORMACIÓN GENERAL Y CONFIGURACIONES
+--------------------------------------------------------------------------------
+• Opciones de base:            Disponible para motor de combustión
+                               Disponible para motor eléctrico
+• Movilidad:                   La base puede surtirse opcionalmente con ruedas 
+                               que facilitan su movimiento
+
+
+CAPACIDADES NOMINALES
+--------------------------------------------------------------------------------
+• Molienda de granos:          1,000 kg/h (en molienda de maíz con criba de 1/4″)
+• Picado en verde:             1,000 kg/h
+
+
+POTENCIAS REQUERIDAS
+--------------------------------------------------------------------------------
+• Motor eléctrico:             5 HP
+• Motor de combustión:         10 a 13 HP
+
+================================================================================

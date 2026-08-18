@@ -1,0 +1,99 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Todos los Productos{% endblock %}
+
+{% block content %}
+<!-- ─── Hero Section ──────────────────────────────────────────────── -->
+<section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Equipamiento Agrícola <span class="highlight">de Primer Nivel</span></h1>
+        <p class="hero-subtitle">Tractores, maquinaria, herramientas de jardinería, motores y refacciones de las mejores marcas.</p>
+        <div class="hero-actions">
+            <a href="#products-section" class="btn btn-primary btn-lg" id="hero-cta">
+                <i class="fas fa-store"></i> Ver Productos
+            </a>
+            <a href="{% url 'store:contact' %}" class="btn btn-outline btn-lg" id="hero-contact">
+                <i class="fas fa-envelope"></i> Contáctanos
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ─── Category Pills ────────────────────────────────────────────── -->
+<section class="category-pills" id="category-pills">
+    <div class="container">
+        <div class="pills-scroll">
+            <a href="{% url 'store:home' %}" class="pill pill-active" id="pill-all">
+                <i class="fas fa-border-all"></i> Todos
+            </a>
+            {% for cat in categories %}
+            <a href="{% url 'store:category_detail' cat.pk %}" class="pill" id="pill-{{ cat.pk }}">
+                {% if cat.name == 'Agricultura' %}
+                    <i class="fas fa-tractor"></i>
+                {% elif cat.name == 'Jardinería' %}
+                    <i class="fas fa-seedling"></i>
+                {% elif cat.name == 'Motores' %}
+                    <i class="fas fa-cogs"></i>
+                {% elif cat.name == 'Refacciones' %}
+                    <i class="fas fa-wrench"></i>
+                {% endif %}
+                {{ cat.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ─── Products Grid ─────────────────────────────────────────────── -->
+<section class="products-section" id="products-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Todos los Productos</h2>
+            <p class="section-subtitle">{{ items|length }} productos disponibles</p>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            {% for item in items %}
+            {% include 'store/includes/product_card.html' with item=item %}
+            {% empty %}
+            <div class="empty-state">
+                <i class="fas fa-box-open"></i>
+                <p>No hay productos disponibles en este momento.</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ─── Brands Marquee ────────────────────────────────────────────── -->
+<section class="brands-section" id="brands-section">
+    <div class="container">
+        <h2 class="section-title text-center">Nuestras Marcas</h2>
+        <div class="brands-marquee">
+            <div class="brands-track">
+                {% for brand in brands %}
+                <div class="brand-card" id="brand-{{ brand.pk }}">
+                    {% if brand.logo %}
+                    <img src="{{ brand.logo.url }}" alt="{{ brand.name }}" class="brand-logo-img" loading="lazy">
+                    {% else %}
+                    <span class="brand-name-text">{{ brand.name }}</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <!-- Duplicate for infinite scroll effect -->
+                {% for brand in brands %}
+                <div class="brand-card">
+                    {% if brand.logo %}
+                    <img src="{{ brand.logo.url }}" alt="{{ brand.name }}" class="brand-logo-img" loading="lazy">
+                    {% else %}
+                    <span class="brand-name-text">{{ brand.name }}</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

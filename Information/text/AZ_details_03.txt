@@ -1,0 +1,22 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+             AZTECA - MOLINO 24 CON LEVANTE HIDRÁULICO A TDF
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                       Azteca
+• Equipo:                      Molino 24 con levante hidráulico a toma de fuerza
+
+
+ESPECIFICACIONES TÉCNICAS
+--------------------------------------------------------------------------------
+• Potencia efectiva requerida:  60 - 80 H.P.
+• Velocidad del rotor:         540 R.P.M.
+• Rendimiento aprox. en granos: 4500 KGS/HR
+• Rendimiento aprox. en forrajes: 2250 KGS/HR
+• Cantidad de martillos:        120
+• Ancho boca de alimentación:  61 CM
+• Peso Molino c/levante y TDF: 592 KG
+
+================================================================================

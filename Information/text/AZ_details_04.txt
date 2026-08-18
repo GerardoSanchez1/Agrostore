@@ -1,0 +1,21 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+             AZTECA - ENSILADORA PARA CAÑA ACOPLADA A MOTOR ELÉCTRICO
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                       Azteca
+• Equipo:                      Ensiladora para caña acoplada a motor eléctrico
+
+
+ESPECIFICACIONES TÉCNICAS
+--------------------------------------------------------------------------------
+• Potencia efectiva requerida:  5 H.P.
+• Velocidad del rotor:         1500 R.P.M.
+• Capacidad aproximada:        1 TON/HR
+• Dimensión estimada de corte: 1 CM
+• No. De Cuchillas:            4
+• Peso de ensiladora c/base:   92 KG
+
+================================================================================

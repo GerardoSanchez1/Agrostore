@@ -1,0 +1,4 @@
+B-MAX Plat
+- Motor Cil / L: 4 / 4,4
+- Potencia CV: 83.6 / 97.3 / 106.8
+- Transmisión: Synchro Shuttle

@@ -1,0 +1,118 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}{{ item.name }}{% endblock %}
+
+{% block content %}
+<section class="product-detail" id="product-detail">
+    <div class="container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" id="breadcrumb">
+            <a href="{% url 'store:home' %}">Inicio</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="{% url 'store:category_detail' item.category.pk %}">{{ item.category.name }}</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>{{ item.name }}</span>
+        </nav>
+
+        <div class="product-detail-grid">
+            <!-- ─── Image Gallery ─────────────────────────────────── -->
+            <div class="product-gallery" id="product-gallery">
+                <div class="gallery-main" id="gallery-main">
+                    {% if item.pictures.all %}
+                    <img src="{{ item.pictures.first.photo.url }}" alt="{{ item.name }}" id="gallery-main-img" class="gallery-main-img">
+                    {% else %}
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                        <span>Sin imagen</span>
+                    </div>
+                    {% endif %}
+                </div>
+                {% if item.pictures.count > 1 %}
+                <div class="gallery-thumbs" id="gallery-thumbs">
+                    {% for pic in item.pictures.all %}
+                    <button class="gallery-thumb {% if forloop.first %}active{% endif %}"
+                            data-src="{{ pic.photo.url }}"
+                            id="thumb-{{ forloop.counter }}">
+                        <img src="{{ pic.photo.url }}" alt="{{ item.name }} - Imagen {{ forloop.counter }}" loading="lazy">
+                    </button>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- ─── Product Info ──────────────────────────────────── -->
+            <div class="product-info" id="product-info">
+                <div class="product-info-header">
+                    <div class="product-brand-badge">
+                        {% if item.brand.logo %}
+                        <img src="{{ item.brand.logo.url }}" alt="{{ item.brand.name }}" class="brand-logo-small">
+                        {% endif %}
+                        <span>{{ item.brand.name }}</span>
+                    </div>
+                    <span class="product-category-tag">
+                        <i class="fas fa-tag"></i> {{ item.category.name }}
+                    </span>
+                </div>
+
+                <h1 class="product-title" id="product-title">{{ item.name }}</h1>
+
+                <div class="product-price-block" id="product-price">
+                    <span class="product-price-value">{{ item.formatted_price }}</span>
+                </div>
+
+                <div class="product-actions" id="product-actions">
+                    {% if user.is_authenticated %}
+                    <button class="wishlist-toggle btn {% if in_wishlist %}btn-wishlisted{% else %}btn-wishlist{% endif %} btn-lg"
+                            data-item-id="{{ item.pk }}"
+                            data-url="{% url 'store:wishlist_toggle' item.pk %}"
+                            id="detail-wishlist-btn">
+                        <i class="{% if in_wishlist %}fas{% else %}far{% endif %} fa-heart"></i>
+                        <span>{% if in_wishlist %}En tu Lista de Deseos{% else %}Agregar a Lista de Deseos{% endif %}</span>
+                    </button>
+                    {% endif %}
+
+                    <a href="{% url 'store:contact' %}" class="btn btn-primary btn-lg" id="detail-contact-btn">
+                        <i class="fas fa-envelope"></i> Solicitar Información
+                    </a>
+                    <a href="https://wa.me/5214431745982?text=Hola%2C%20me%20interesa%20el%20producto%3A%20{{ item.name|urlencode }}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" id="detail-whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── Description & Details Tabs ────────────────────────── -->
+        <div class="product-tabs" id="product-tabs">
+            <div class="tabs-nav" id="tabs-nav">
+                <button class="tab-btn active" data-tab="description" id="tab-desc-btn">
+                    <i class="fas fa-file-alt"></i> Descripción
+                </button>
+                <button class="tab-btn" data-tab="details" id="tab-details-btn">
+                    <i class="fas fa-list-ul"></i> Especificaciones
+                </button>
+            </div>
+            <div class="tabs-content">
+                <div class="tab-panel active" id="tab-description">
+                    <div class="tab-content-text">{{ item.description|linebreaksbr }}</div>
+                </div>
+                <div class="tab-panel" id="tab-details">
+                    <pre class="tab-content-pre">{{ item.details }}</pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── Related Products ──────────────────────────────────── -->
+        {% if related %}
+        <section class="related-products" id="related-products">
+            <h2 class="section-title">Productos Relacionados</h2>
+            <div class="products-grid products-grid-sm">
+                {% for item in related %}
+                {% include 'store/includes/product_card.html' with item=item %}
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

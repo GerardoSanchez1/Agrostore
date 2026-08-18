@@ -1,0 +1,96 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                  CORTADORA DE CÉSPED JOHN DEERE Z355E
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                       John Deere
+• Modelo:                      Z355E
+• Tipo:                        Cortadora de Césped
+
+
+MOTOR
+--------------------------------------------------------------------------------
+• Modelo de motor:             M44 - naftero
+• Potencia:                    16,4 kW (22 hp)
+• Desplazamiento:              724 cm³ (44,2 plg³)
+• Cilindros:                   V-twin
+• Lubricación:                 Forzada a presión, con filtro reemplazable
+• Cárter de aceite:            1,9 L
+• Tipo de válvulas:            A la cabeza (OHV)
+• Batería:                     12V - 340A (cold crank)
+• Acelerador/Cebador:          Palanca única
+• Refrigeración:               Por aire
+• Capacidad de combustible:    7,9 L
+
+
+TRANSMISIÓN
+--------------------------------------------------------------------------------
+• Tipo:                        Hidra
+• Velocidad de avance:         0 - 11,3 km/h
+• Velocidad de retroceso:      0 - 5,6 km/h
+• Control de velocidad/dir.:   Dos palancas
+• Ajustes:                     2 en altura y 9 adelante-atrás
+
+
+TOMA DE FUERZA (TDF)
+--------------------------------------------------------------------------------
+• Tipo:                        Eléctrica - 142 Nm
+• Mando de cuchillas:          Por correa
+
+
+CHASIS Y EQUIPAMIENTO
+--------------------------------------------------------------------------------
+• Tipo de chasis:              Tubular (servicio pesado)
+• Primer / Pintura:            E-coat / Pintura en polvo
+• Horómetro:                   Sí
+• Compartimiento guantera:     Sí
+• Portavasos:                  Sí
+
+
+ASIENTO
+--------------------------------------------------------------------------------
+• Altura del respaldo:         Respaldo de 38 cm con apoyabrazos
+• Ajuste anteroposterior:      7,6 cm
+• Suspensión del asiento:      2, por resortes
+
+
+LEVANTE DE PLATAFORMA DE CORTE
+--------------------------------------------------------------------------------
+• Tipo:                        Manual
+• Altura de corte:             2,5 a 10,2 cm
+• Incrementos de altura:       0,64 cm
+
+
+PLATAFORMA DE CORTE
+--------------------------------------------------------------------------------
+• Ancho de corte:              122 cm (48")
+• Tipo de descarga:            Descarga lateral
+• Espesor de la plataforma:    0,27 cm
+• Mando de cuchillas:          Por correa
+
+
+RODADOS (NEUMÁTICOS)
+--------------------------------------------------------------------------------
+• Delanteros:                  11 x 4,0 - 4
+• Traseros:                    18 x 8,50 - 8
+
+
+SISTEMA DE SEGURIDAD
+--------------------------------------------------------------------------------
+• Presencia de operador:       Sí
+• Freno de estacionamiento:    Sí
+
+
+DIMENSIONES Y PESO
+--------------------------------------------------------------------------------
+• Distancia entre ruedas:      128 cm
+• Largo total:                 191 cm
+• Ancho (sin plataforma):      115,6 cm
+• Ancho (con plataforma):      153,7 cm
+• Ancho (deflector levantado): 127 cm
+• Altura total:                92,2 cm
+• Peso:                        230 kg
+
+================================================================================

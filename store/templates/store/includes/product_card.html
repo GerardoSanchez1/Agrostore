@@ -1,0 +1,29 @@
+{% load static %}
+<article class="product-card" id="product-card-{{ item.pk }}">
+    <a href="{% url 'store:product_detail' item.pk %}" class="product-card-link">
+        <div class="product-card-image">
+            {% if item.first_image %}
+            <img src="{{ item.first_image.photo.url }}" alt="{{ item.name }}" loading="lazy">
+            {% else %}
+            <div class="product-card-placeholder">
+                <i class="fas fa-image"></i>
+            </div>
+            {% endif %}
+            <div class="product-card-badge">{{ item.category.name }}</div>
+        </div>
+        <div class="product-card-body">
+            <span class="product-card-brand">{{ item.brand.name }}</span>
+            <h3 class="product-card-title">{{ item.name }}</h3>
+            <div class="product-card-price">{{ item.formatted_price }}</div>
+        </div>
+    </a>
+    {% if user.is_authenticated %}
+    <button class="wishlist-toggle wishlist-btn {% if item.pk in wishlist_ids %}wishlisted{% endif %}"
+            data-item-id="{{ item.pk }}"
+            data-url="{% url 'store:wishlist_toggle' item.pk %}"
+            aria-label="{% if item.pk in wishlist_ids %}Quitar de lista de deseos{% else %}Agregar a lista de deseos{% endif %}"
+            id="wishlist-btn-{{ item.pk }}">
+        <i class="{% if item.pk in wishlist_ids %}fas{% else %}far{% endif %} fa-heart"></i>
+    </button>
+    {% endif %}
+</article>

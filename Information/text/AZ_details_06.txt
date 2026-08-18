@@ -1,0 +1,24 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+             AZTECA - DESVARADORA #3 LIGERA DL36
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                       Azteca
+• Equipo:                      Desvaradora #3 Ligera DL36
+
+
+ESPECIFICACIONES TÉCNICAS
+--------------------------------------------------------------------------------
+• Ancho de Corte:              0.92 MTS
+• Ancho de Máquina:            1.05 MTS
+• Largo de Máquina:            1.70 MTS
+• Altura de Corte:             1” a 12”
+• Caja Engranes:               40 HP
+• Cuchilla:                    ½” a 3”
+• No. De Cuchillas:            2
+• Peso Aproximado:             95 KGS
+• RPM del tractor:             540
+
+================================================================================

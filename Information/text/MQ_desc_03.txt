@@ -1,0 +1,5 @@
+X8 VT-Drive Tier 2
+- Motor Cil / L: 6 / 6,7
+- Potencia CV: 305
+- Transmisión: VT-Drive
+- Descubre el modelo

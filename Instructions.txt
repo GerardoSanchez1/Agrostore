@@ -1,0 +1,197 @@
+Today you will build a web store for my business. I sell
+agriculture-related products. It should be movible friendly and all information and options should be displayed in Spanish.
+
+Project structure
+
+The project folder contains the following structure:
+
+Project/ │ ├── Information/ │ ├── Information.xlsx │ ├── media/ │ └──
+text/
+
+The Information.xlsx workbook contains four worksheets:
+
+1.  Item
+
+    -   id
+    -   name
+    -   brand_id (references Brand.id)
+    -   category (references Category.id or the corresponding category
+        entry)
+    -   price
+    -   description
+    -   details
+
+    The values stored in the description and details columns are
+    filenames that correspond to .txt files located inside the
+    Information/text folder.
+
+2.  Brand
+
+    -   id
+    -   name
+    -   logo
+
+    The logo column stores the filename of a .jpg image located inside
+    Information/media.
+
+3.  Category
+
+    -   Stores the available product categories.
+
+4.  Picture
+
+    -   id
+    -   photo
+    -   item_id (references Item.id)
+
+    The photo column stores the filename of a .jpg image located inside
+    Information/media.
+
+The media folder contains every product image used by the website. The
+text folder contains every .txt file referenced by the Item worksheet.
+
+General requirements
+
+Create a complete Django-based web application using Django, HTML, CSS
+and JavaScript.
+
+Use SQLite as the database.
+
+Use Django templates (do not use React or other frontend frameworks).
+
+Keep CSS and JavaScript in separate static files following Django best
+practices.
+
+You are free to create additional database models whenever necessary to
+properly implement the required functionality.
+
+Database
+
+Implement the database models in models.py based on the information
+contained in Information.xlsx.
+
+Create a standalone Python script named import_excel.py that imports the
+Excel workbook into the SQLite database after Django migrations have
+been applied.
+
+The Excel workbook is the source of truth.
+
+The script should: - Populate every required table. - Import all
+relationships correctly. - Avoid creating duplicate records if executed
+multiple times.
+
+Configure Django’s MEDIA_URL and MEDIA_ROOT so every image inside the
+media folder is displayed correctly.
+
+Website requirements
+
+1.  Homepage (All Products)
+
+The homepage should display every available product.
+
+The navigation bar should contain: - All Products - Categories -
+Search - Wishlist - Login - Register
+
+Arrange them in any order that provides a good user experience.
+
+Login and Register should only be visible to anonymous users.
+
+Authenticated users should instead see a Logout button.
+
+Wishlist should only be visible to authenticated users.
+
+Display products using a modern card/grid layout similar to an online
+marketplace (such as Amazon).
+
+Each product card should display: - Product image (or a placeholder if
+none exists) - Product name - Brand - Price
+
+Clicking a product redirects the user to its Product Page.
+
+2.  User Registration
+
+Allow users to register using: - Email - Password - Password
+confirmation
+
+The email address must be unique.
+
+Passwords must never be stored as plain text.
+
+Use Django’s built-in authentication system and password hashing.
+
+3.  Login
+
+Allow users to log in using email and password.
+
+If authentication fails, display a generic error message without
+indicating whether the email or password is incorrect.
+
+4.  Categories
+
+Display products grouped by category.
+
+Each category should clearly show all products belonging to it.
+
+5.  Wishlist
+
+Each registered user has their own private wishlist.
+
+Users cannot access other users’ wishlists.
+
+Allow users to add and remove products from their wishlist.
+
+6.  Product Page
+
+Display: - Product images - Product name - Brand - Brand logo -
+Category - Price
+
+Below the product information display: - Product description (loaded
+from the corresponding text file) - Product details (loaded from the
+corresponding text file)
+
+Allow authenticated users to add or remove the product from their
+wishlist.
+
+Use a clean and modern layout.
+
+Search
+
+Implement a search bar capable of searching products by: - Product
+name - Brand - Category
+
+Contact / Purchase Request
+
+Implement a contact form that allows users to request the purchase of
+one or more products.
+
+The form should collect: - Name - Email - Message
+
+When submitted, it should send an email to the store owner using
+Django’s email backend.
+
+Administrator
+
+Register every model in the Django Admin interface.
+
+Configure the admin interface with useful features such as: -
+list_display - search_fields - list_filter - inline editing where
+appropriate
+
+The admin interface should allow the store owner to easily create, edit
+and remove products, brands, categories, images and every other relevant
+piece of information.
+
+Store owner information
+
+Email: gerardo-sanchez-1@hotmail.com
+
+WhatsApp: +52 443-174-59-82
+
+Use this information wherever contact with the store owner is required.
+
+Visual Design
+
+The website should have a modern, responsive and intuitive design.
+
+You are free to choose the overall visual style provided it remains
+clean, easy to navigate and professional.

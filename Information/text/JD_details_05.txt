@@ -1,0 +1,34 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                  MOTOR BICILÍNDRICO V-TWIN 18,5 CV (13,8 kW)
+================================================================================
+
+ESPECIFICACIONES GENERALES DEL MOTOR
+--------------------------------------------------------------------------------
+• Tipo de motor:              Dos cilindros en V (V-Twin)
+• Sistema de fuerza:          iTorque™ (máxima capacidad de arrastre)
+• Refrigeración:              Por aire (refrigeración uniforme)
+• Potencia bruta:             18,5 CV (13,8 kW) a 3600 rpm (Certificado SAE J1995)
+• Cilindrada:                 603 cc
+• Funcionamiento:             Potencia suave, silenciosa y confiable
+
+
+CARACTERÍSTICAS Y CONSTRUCCIÓN DE CALIDAD
+--------------------------------------------------------------------------------
+• Cilindros:                  Camisas de cilindros de hierro fundido
+• Valvulería:                 Válvulas en culata (OHV)
+• Lubricación:                Engrase a presión total
+• Filtro de aceite:           Filtro sustituible de fácil mantenimiento
+• Filtración de aire:         Filtro de aire de dos fases
+• Ventajas del diseño V-Twin: Alta potencia, fácil arranque y bajas vibraciones
+
+
+SISTEMA ELÉCTRICO Y ALTERNADOR
+--------------------------------------------------------------------------------
+• Ubicación del alternador:   En el volante del motor
+• Capacidad del alternador:   15 A
+• Función del sistema:        Recarga rápida de batería y soporte para accesorios 
+                              (luces, aspersoras, etc.)
+• Regulación:                 Ajustado para mantener carga plena sin sobrecargas
+
+================================================================================

@@ -1,0 +1,86 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS TRACTOR
+                             JOHN DEERE 5415
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                    John Deere
+• Modelo:                   5415
+• Tipo:                     Tractor de 76 hp
+
+
+ESPECIFICACIONES DEL MOTOR
+--------------------------------------------------------------------------------
+• Descripción del motor:     John Deere PowerTech 4045
+• Familia de motor:         No certificada
+• Cilindrada:               4 cilindros: 4.5 L (276 cu in.)
+• Régimen nominal:          2400 rpm
+• Aspiración:               Turboalimentada
+• Camisas de cilindro:      Camisas húmedas
+• Potencia nominal:         Motor T2 (9F/3R) – 75 hp
+
+
+RENDIMIENTO Y TRANSMISIÓN
+--------------------------------------------------------------------------------
+• Potencia nominal TDF:     Motor T2 (9F/3R) – 62 hp (HP SAE)
+• Tipo de transmisión:      Sincronizada 9F/3R
+• Embrague (húmedo/seco):   Seco
+• Transmisión ultralenta:   Disponible
+
+
+SISTEMA HIDRÁULICO
+--------------------------------------------------------------------------------
+• Tipo de sistema:          De centro abierto
+• Caudal VCS trasera:       56.9 L/min (15 gpm) en una única VCS
+
+
+ENGANCHE TRASERO
+--------------------------------------------------------------------------------
+• Categoría de enganche:    Categoría 2 (denominación SAE)
+• Capacidad máx. levante:   2100 kg (a 610 mm detrás de puntos de levante)
+• Tipo de detección:        Tensor central
+
+
+TOMA DE FUERZA TRASERA (TDF)
+--------------------------------------------------------------------------------
+• Tipo:                     Estándar: 540 rpm
+• Accionamiento de TDF:     Mecánico
+
+
+EJE TRASERO Y FRENOS
+--------------------------------------------------------------------------------
+• Control del diferencial:  Mecánico (pedal)
+• Frenos (tipo y control):  Multidisco en baño de aceite
+
+
+LLANTAS
+--------------------------------------------------------------------------------
+• Parte trasera:            15.5-38
+
+
+SISTEMA ELÉCTRICO
+--------------------------------------------------------------------------------
+• Tamaño del alternador:    70 amp
+
+
+ESTACIÓN DEL OPERADOR
+--------------------------------------------------------------------------------
+• Estructura antivuelco:    Rígida – plegable – telescópica / Plegable (OOS)
+
+
+DIMENSIONES Y PESO
+--------------------------------------------------------------------------------
+• Distancia entre ejes:     2180 mm
+• Longitud total:           3510 mm
+• Peso aprox. embarque:     Tracción sencilla: 2500 kg
+                            Doble Tracción (DT): 2690 kg
+
+
+CAPACIDADES DE FLUIDOS
+--------------------------------------------------------------------------------
+• Depósito de combustible:  95 L
+• Sistema de enfriamiento:  10.8 L
+• Hidráulico y transmisión: 38 L
+
+================================================================================

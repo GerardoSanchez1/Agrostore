@@ -1,0 +1,52 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+             MOTOR Y SISTEMAS - JOHN DEERE Z950M / Z950R
+================================================================================
+
+ESPECIFICACIONES GENERALES DEL MOTOR
+--------------------------------------------------------------------------------
+• Modelos compatibles:       Z950M y Z950R (Serie ZTrak Z900)
+• Tipo de motor:              Comercial de eje vertical, bicilíndrico en V
+• Refrigeración:              Por aire
+• Potencia:                   27 hp (20,1 kW)
+• Tipo de combustible:        Gasolina
+• Normativa de emisiones:     Cumple con EPA y CARB (EE. UU.)
+
+
+CARACTERÍSTICAS Y DISEÑO DEL MOTOR
+--------------------------------------------------------------------------------
+• Válvulas:                   Diseño en culata (OHV)
+                               - Mayor potencia y par motor por pulgada cúbica
+                               - Consumo de combustible más eficiente
+• Bloque del motor:           Bloque grande de aluminio
+                               - Dispersión efectiva del calor
+                               - Construcción liviana y robusta
+                               - Prolonga la vida útil del motor
+• Lubricación:                Engrase a presión máxima con filtro de caudal total
+                               - Garantiza engrase en pendientes o terrenos irregulares
+                               - Filtro de aceite para mantener la limpieza
+• Sistema eléctrico/Comb.:    Alternador de 30 A y Bomba de combustible
+
+
+SISTEMA DE FILTRACIÓN DE AIRE
+--------------------------------------------------------------------------------
+• Tipo de filtro:             Filtro de aire de doble cartucho
+• Acceso:                     Trasero, con pestillo de liberación rápida (sin herramientas)
+• Funcionamiento:             Introduce aire limpio desde la parte superior
+• Protección adicional:       Incluye prelimpiador para entornos con alto polvo/suciedad
+
+
+MANTENIMIENTO DEL MOTOR
+--------------------------------------------------------------------------------
+• Llenado / Comprobación:     Tubo ubicado en la parte superior (fácil acceso y vista)
+• Drenaje de aceite:          Tubo flexible para vaciado práctico en bandeja (sin derrames)
+
+
+SISTEMA Y DEPÓSITO DE COMBUSTIBLE
+--------------------------------------------------------------------------------
+• Capacidad del depósito:     43,5 L (permite jornada completa de trabajo)
+• Consumo estimado:           5,7 L/h a 8,3 L/h (según carga y condiciones)
+• Indicador de nivel:         Vista rápida y fácil del combustible restante
+• Llenado:                    Boca superior inclinada de gran tamaño para mayor seguridad
+
+================================================================================

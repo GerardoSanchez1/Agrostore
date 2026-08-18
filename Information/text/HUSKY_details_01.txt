@@ -1,0 +1,26 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                     MOTOR SWEDISH HUSKY POWER RLM1600
+================================================================================
+
+INFORMACIÓN GENERAL Y RENDIMIENTO
+--------------------------------------------------------------------------------
+• Marca:                       Swedish Husky Power
+• Modelo:                      RLM1600
+• Tipo de motor:               Gasolina, 4 tiempos
+• Potencia:                    16 HP
+• Desplazamiento:              407 cc
+• Torque máximo:               25 N·m
+• Régimen:                     3 500 rpm
+• Sistema de arranque:         Manual retráctil
+
+
+CAPACIDADES Y DIMENSIONES
+--------------------------------------------------------------------------------
+• Capacidad de combustible:    6.5 L
+• Capacidad de aceite:         1.1 L
+• Flecha:                      Ø 25.4 mm (1″) con cuña de 1/4″
+• Peso:                        34 kg
+• Dimensiones:                 55 × 50 × 50 cm
+
+================================================================================

@@ -1,0 +1,125 @@
+Agricultural Products Web Store — Django Application
+Build a complete Django web store for an agriculture products business. The site displays 24 products across 5 brands and 4 categories, with all UI in Spanish. Data is sourced from Information.xlsx and associated media/text files.
+
+Data Summary
+Sheet	Records	Key fields
+Item	24 products	name, brand_id, category, price, description (txt), details (txt)
+Brand	5 brands	John Deere, McCormick, AZTECA, SWISSMEX, Husky Power
+Category	4 categories	Agricultura, Jardinería, Motores, Refacciones
+Picture	42 images	photo filename → item_id mapping
+User Review Required
+IMPORTANT
+
+Email backend: The contact/purchase-request form requires sending email via Django. I will configure Django's console email backend for development (prints emails to terminal). For production you would need SMTP credentials (e.g., Outlook/Hotmail SMTP for gerardo-sanchez-1@hotmail.com). Is this acceptable for now?
+
+IMPORTANT
+
+Project name: I will create the Django project as mystore with a single app called store inside the workspace root c:\Users\gerar\OneDrive\Documents\MyStore. This keeps the Information/ folder as a sibling.
+
+Open Questions
+Domain/store name — Do you have a preferred store name/brand to display in the navbar and page titles, or should I use something like "AgroStore" or "Mi Tienda Agrícola"?
+Price currency — The prices appear to be in MXN (Mexican Pesos). Should I display them as $1,200,000.00 MXN or a different format?
+Superuser credentials — Should I auto-create a Django superuser during the import script (e.g., admin / admin)? Or would you prefer to create it manually?
+Proposed Changes
+1. Django Project Scaffolding
+[NEW] mystore/ — Django project configuration
+settings.py — SQLite DB, MEDIA_URL/MEDIA_ROOT, static files config, email backend (console), LANGUAGE_CODE = 'es'
+urls.py — Include store.urls and serve media in development
+wsgi.py, asgi.py — Standard Django files
+[NEW] manage.py — Django management entry point
+2. Store App — Models
+[NEW] store/models.py
+Model	Fields	Notes
+Brand	id, name, logo (ImageField)	Logo stored in media/
+Category	id, name	4 categories
+Item	id, name, brand (FK→Brand), category (FK→Category), price (DecimalField), description (TextField), details (TextField)	Description/details loaded from .txt files during import
+Picture	id, photo (ImageField), item (FK→Item, related_name='pictures')	Multiple photos per item
+Wishlist	user (FK→User), item (FK→Item), unique_together	Private per-user wishlist
+ContactRequest	name, email, message, products (M2M→Item), created_at	Purchase request form
+Custom User model using email as the username field (extends AbstractUser).
+
+3. Store App — Views & URLs
+[NEW] store/views.py
+[NEW] store/urls.py
+URL Pattern	View	Description
+/	home	Homepage — all products grid
+/producto/<id>/	product_detail	Product page with images, description, details
+/categorias/	categories	Products grouped by category
+/categoria/<id>/	category_detail	Single category view
+/buscar/	search	Search results
+/lista-deseos/	wishlist	User's wishlist (login required)
+/lista-deseos/toggle/<id>/	wishlist_toggle	Add/remove from wishlist (AJAX)
+/contacto/	contact	Contact/purchase request form
+/registro/	register	User registration
+/iniciar-sesion/	login	Login
+/cerrar-sesion/	logout	Logout
+4. Store App — Templates
+[NEW] store/templates/store/
+Template	Purpose
+base.html	Base layout with navbar, footer, WhatsApp floating button
+home.html	Product grid (card layout like Amazon/MercadoLibre)
+product_detail.html	Product page with image carousel, specs, wishlist toggle
+categories.html	Category overview with product grids
+category_detail.html	Products filtered by category
+search_results.html	Search results
+wishlist.html	User's saved products
+contact.html	Contact/purchase form
+register.html	Registration form
+login.html	Login form
+5. Static Files — CSS & JavaScript
+[NEW] store/static/store/css/style.css
+Modern design system: dark green/earth-tone palette (agricultural theme)
+CSS Grid/Flexbox product cards
+Responsive breakpoints (mobile-first)
+Glassmorphism card effects, smooth transitions
+Google Fonts (Inter or Outfit)
+Image carousel styles
+[NEW] store/static/store/js/main.js
+Wishlist toggle (AJAX POST with CSRF)
+Product image carousel/gallery
+Mobile hamburger menu
+Search bar functionality
+Smooth scroll and micro-animations
+6. Data Import Script
+[NEW] import_excel.py
+Standalone Django script (uses django.setup())
+Reads Information/Information.xlsx with openpyxl
+Copies media files to Django's MEDIA_ROOT
+Reads .txt files and stores content in Item.description / Item.details
+Idempotent — uses get_or_create / update_or_create
+Populates: Brand → Category → Item → Picture
+7. Admin Configuration
+[NEW] store/admin.py
+Register all models
+ItemAdmin: list_display, search_fields, list_filter by brand/category, inline PictureAdmin
+BrandAdmin: list_display, search_fields
+CategoryAdmin: list_display
+PictureAdmin: list_display, list_filter by item
+WishlistAdmin: list_display, list_filter by user
+ContactRequestAdmin: list_display, search_fields, list_filter by date
+8. Visual Design Concept
+Color palette: Deep forest green (#1B4332) → emerald (#2D6A4F) → warm gold accents (#D4A373) — evokes agriculture
+Typography: Google Fonts "Outfit" (headings) + "Inter" (body)
+Cards: Subtle box-shadows, hover scale effects, rounded corners
+Navbar: Sticky, semi-transparent with blur backdrop
+Product page: Image gallery with thumbnails, tabbed description/details
+WhatsApp button: Fixed floating action button (green, bottom-right corner) linking to wa.me/5214431745982
+Footer: Contact info, store name, WhatsApp link
+Mobile: Hamburger menu, stacked cards, full-width images
+Verification Plan
+Automated Tests
+bash
+
+python manage.py makemigrations
+python manage.py migrate
+python import_excel.py
+python manage.py runserver
+Manual Verification
+Verify all 24 products display on homepage with images
+Test category filtering (4 categories)
+Test search by name, brand, category
+Register a new user, login, add/remove wishlist items
+Submit contact form and verify console email output
+Test responsive design on mobile viewport
+Verify Django admin shows all models with proper config
+Confirm all brand logos and product images load correctly

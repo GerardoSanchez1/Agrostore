@@ -1,0 +1,28 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                     MOTOR SWEDISH HUSKY POWER RLM650M
+================================================================================
+
+INFORMACIÓN GENERAL Y RENDIMIENTO
+--------------------------------------------------------------------------------
+• Marca:                       Swedish Husky Power
+• Modelo:                      RLM650M
+• Tipo de motor:               Gasolina, 4 tiempos
+• Potencia:                    6.5 HP
+• Desplazamiento:              200 cc
+• Torque máximo:               14 N·m
+• RPM:                         3600 rpm
+• Sistema de arranque:         Manual retráctil
+• Sistema de encendido:        Transistor magnético
+
+
+CAPACIDADES Y DIMENSIONES
+--------------------------------------------------------------------------------
+• Capacidad de combustible:    3.6 L
+• Capacidad de aceite:         0.6 L
+• Diámetro de la flecha:       19 mm
+• Cuña:                        3/16"
+• Peso:                        16 kg
+• Dimensiones:                 41.5 × 38.5 × 37 cm
+
+================================================================================

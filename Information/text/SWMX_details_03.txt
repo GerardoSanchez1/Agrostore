@@ -1,0 +1,29 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS
+                        CORTADORA DE CÉSPED
+================================================================================
+
+ESPECIFICACIONES DEL MOTOR
+--------------------------------------------------------------------------------
+• Cilindrada:                  224 cc
+• Tipo de motor:               4 tiempos (bajo consumo de combustible)
+• Sistema de arranque:         Retráctil de fácil arranque
+
+
+SISTEMA DE CORTE Y AJUSTE
+--------------------------------------------------------------------------------
+• Rango de altura de corte:    25 mm a 75 mm
+• Posiciones de altura:        7 posiciones (ajuste mediante palanca)
+• Sistema de recolección:      Amplia bolsa trasera de descarga
+
+
+ESTRUCTURA Y DISEÑO
+--------------------------------------------------------------------------------
+• Material de la carcasa:      Metálica (chasis de acero moldeado)
+• Recubrimiento:               Pintura epóxica de alta resistencia
+• Maneral:                     Plegable (facilita almacenamiento y transporte)
+• Ruedas delanteras:           8” (pulgadas)
+• Ruedas traseras:             10” (pulgadas)
+• Mantenimiento:               Mínimo con alta durabilidad
+
+================================================================================

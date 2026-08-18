@@ -1,0 +1,45 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block content %}
+<section class="page-section" id="category-detail-page">
+    <div class="container">
+        <nav class="breadcrumb" id="breadcrumb">
+            <a href="{% url 'store:home' %}">Inicio</a>
+            <i class="fas fa-chevron-right"></i>
+            <a href="{% url 'store:categories' %}">Categorías</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>{{ category.name }}</span>
+        </nav>
+
+        <div class="page-header">
+            <h1 class="page-title">
+                {% if category.name == 'Agricultura' %}
+                    <i class="fas fa-tractor"></i>
+                {% elif category.name == 'Jardinería' %}
+                    <i class="fas fa-seedling"></i>
+                {% elif category.name == 'Motores' %}
+                    <i class="fas fa-cogs"></i>
+                {% elif category.name == 'Refacciones' %}
+                    <i class="fas fa-wrench"></i>
+                {% endif %}
+                {{ category.name }}
+            </h1>
+            <p class="page-subtitle">{{ items|length }} producto{{ items|length|pluralize:"s" }} encontrado{{ items|length|pluralize:"s" }}</p>
+        </div>
+
+        <div class="products-grid" id="products-grid">
+            {% for item in items %}
+            {% include 'store/includes/product_card.html' with item=item %}
+            {% empty %}
+            <div class="empty-state">
+                <i class="fas fa-box-open"></i>
+                <p>No hay productos en esta categoría.</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

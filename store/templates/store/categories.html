@@ -1,0 +1,48 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block title %}Categorías{% endblock %}
+
+{% block content %}
+<section class="page-section" id="categories-page">
+    <div class="container">
+        <div class="page-header">
+            <h1 class="page-title"><i class="fas fa-th-large"></i> Categorías</h1>
+            <p class="page-subtitle">Explora nuestros productos por categoría</p>
+        </div>
+
+        {% for category in categories %}
+        <div class="category-block" id="category-block-{{ category.pk }}">
+            <div class="category-block-header">
+                <h2 class="category-block-title">
+                    {% if category.name == 'Agricultura' %}
+                        <i class="fas fa-tractor"></i>
+                    {% elif category.name == 'Jardinería' %}
+                        <i class="fas fa-seedling"></i>
+                    {% elif category.name == 'Motores' %}
+                        <i class="fas fa-cogs"></i>
+                    {% elif category.name == 'Refacciones' %}
+                        <i class="fas fa-wrench"></i>
+                    {% endif %}
+                    {{ category.name }}
+                </h2>
+                <a href="{% url 'store:category_detail' category.pk %}" class="btn btn-outline btn-sm">
+                    Ver todos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="products-grid">
+                {% for item in category.items.all %}
+                {% include 'store/includes/product_card.html' with item=item %}
+                {% empty %}
+                <div class="empty-state">
+                    <i class="fas fa-box-open"></i>
+                    <p>No hay productos en esta categoría.</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

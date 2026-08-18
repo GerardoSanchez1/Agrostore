@@ -1,0 +1,80 @@
+================================================================================
+                      ESPECIFICACIONES TÉCNICAS SEMBRADORA
+                            JOHN DEERE BD11 (13 SURCOS)
+================================================================================
+
+INFORMACIÓN GENERAL
+--------------------------------------------------------------------------------
+• Marca:                    John Deere
+• Modelo:                   BD11
+• Tipo:                     Sembradora de 13 surcos
+
+
+DISCOS ABRIDORES
+--------------------------------------------------------------------------------
+• Tipo:                     33.02 cm (13 pulg.)
+• Cantidad:                 13
+• Presión descendente:      56 kg (124 lb)
+• Recorrido:                N/A
+
+
+PESO
+--------------------------------------------------------------------------------
+• Cajón sencillo (espaciamiento 19.05 cm / 7.5 pulg.): 603 kg (1330 lb)
+• Cajón doble (espaciamiento 19.05 cm / 7.5 pulg.):    669 kg (1475 lb)
+• Cajón doble (espaciamiento 17.78 cm / 7 pulg.):     N/A
+
+
+CAPACIDAD DEL CAJÓN
+--------------------------------------------------------------------------------
+• Cajón sencillo (solo grano):                          0.789 m³ (22.4 bu)
+• Cajón doble:                                          0.959 m³ (27.2 bu)
+  - 40% grano:                                          0.381 m³ (10.8 bu)
+  - 60% grano:                                          0.515 m³ (14.6 bu)
+  - 100% grano:                                         0.779 m³ (22.1 bu)
+• Fertilizante o pasto nativo:                         N/A
+• Semilla de pasto o legumbres de semilla pequeña:     0.053 m³ (1.5 bu)
+
+
+SISTEMA DE DOSIFICACIÓN Y DOSIFICADORES
+--------------------------------------------------------------------------------
+• Cajón de grano:           Estándar
+• Cajón de origen:          N/A
+• Agitador de grano:        Tipo Alimentación acanalado
+• Medición de área acres:   Estándar
+
+
+NEUMÁTICOS Y RUEDAS DE PRESIÓN
+--------------------------------------------------------------------------------
+• Agrícola:                 7.5-20, 4PR
+• Agrícola de doble borde:  7.5-20, 4PR
+• Agrícola (con pivote):    N/A
+• Agrícola (transporte):    N/A
+• Tamaño ruedas presión:    Caucho: 2.5x30.5 cm (1x2 pulg.) / 5.1x33.0 cm (2x3 pulg.) / 10.2x30.5 cm (4x12 pulg.)
+                            Acero: N/A
+
+
+COMPONENTES DE SIEMBRA Y ENGANCHE
+--------------------------------------------------------------------------------
+• Tubo semillero:           Aluminio fundido o Hierro fundido
+• Penetración del disco:    Profundidad N/A
+• Enganche:                 Regular: Sí | Eslabón giratorio: N/A
+
+
+ADITAMENTOS DISPONIBLES / OPCIONALES
+--------------------------------------------------------------------------------
+• Marcadores de surco:      N/A
+• Limpiadores de discos:    Opcional
+• Mando de media marcha:    Opcional
+• Cajón pasto/legumbres:    Opcional
+• Tubos de caída pequeña:   N/A
+
+
+DIMENSIONES Y ESPACIAMIENTOS
+--------------------------------------------------------------------------------
+• Ancho de trabajo:         2.5 m (8.1 ft)
+• Ancho de transporte:      3.0 m (10 ft)
+• Espaciamiento surcos:     19.1 cm (7.5 pulg.)
+• Distancia al suelo:       13.8 cm (5.5 pulg.) (en transporte)
+
+================================================================================
