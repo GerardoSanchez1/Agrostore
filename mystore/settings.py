@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-^frnke4f4qn@t&z972z1l
 # SECURITY WARNING: don't run with debug turned on in production!
 
 # Si la variable no existe en Render, por defecto será False por seguridad
-DEBUG = os.environ.get('RENDER', 'False') == 'True'
+DEBUG =  True
 
 # Lee la variable de Render o permite localhost si estás en tu PC
 ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '127.0.0.1,localhost').split(',')
