@@ -128,8 +128,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Habilita la compresión y caché de archivos estáticos para producción
 STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
 
